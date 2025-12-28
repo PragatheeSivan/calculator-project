@@ -1,0 +1,59 @@
+.bg-color{
+    background-color: black;
+    max-width: 360px;
+    width: 100%;
+    background-size: cover;
+    margin: 60px;
+    border-radius: 80px;
+    box-shadow: 0 120px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn1{
+    background-color: rgb(97, 97, 97);
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    height: 60px;
+    font-size: 20px;
+
+    cursor: pointer;
+ 
+
+}
+.num{
+    font-weight: 600;
+    font-size: 28px;
+}
+.no{
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    height: 50px;
+    width: 320px;
+    box-shadow: 2px 2px 4px #ffffff;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+}
+
+.side{
+    background-color: rgb(255, 166, 0);
+}
+.inc{
+    background-color: rgb(41, 40, 40);
+}
+.top-color{
+    color: black;
+}
+
+button {
+    transition: 0.1s;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #757575;
+}
