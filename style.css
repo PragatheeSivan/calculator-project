@@ -6,6 +6,7 @@
     margin: 60px;
     border-radius: 80px;
     box-shadow: 0 120px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding:20px;
 }
 
 .btn1{
@@ -57,3 +58,4 @@ button:active {
     transform: scale(0.95);
     background-color: #757575;
 }
+
