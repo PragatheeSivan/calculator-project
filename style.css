@@ -3,7 +3,7 @@
     max-width: 360px;
     width: 100%;
     background-size: cover;
-    margin: 60px;
+
     border-radius: 80px;
     box-shadow: 0 120px 120px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 20px;
@@ -29,8 +29,8 @@
     border-width: 2px;
     border-color: black;
     border-style: solid;
-    height: 50px;
-    width: 320px;
+
+    width: 100%;
     box-shadow: 2px 2px 4px #ffffff;
     color: white;
     font-size: 40px;
@@ -57,3 +57,4 @@ button:active {
     transform: scale(0.95);
     background-color: #757575;
 }
+
