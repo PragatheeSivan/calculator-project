@@ -15,7 +15,7 @@
 
     
 </head>
-<body class="d-flex justify-content-center alingn-items-center vh-100">
+<body class="d-flex justify-content-center align-items-center vh-100">
     <div class="bg-color">
         <div class="container-fluid">
             <div class="row">
@@ -23,7 +23,11 @@
                 <div class="col-12 text-center">
                   <h1 class="text-white">Welcome to Calculator!</h1>
                 </div>
-                  <input id="display" class="no">
+                  <div class="row mb-2">
+  <div class="col-12">
+    <input id="display" class="no w-100">
+  </div>
+</div>
                   <div class="pt-3">
                     <div class="row g-2">
 
@@ -34,7 +38,7 @@
                       <div class="col-3"><button onclick="addOperator('%')" class="btn1 num m-1 top-color w-100">%</button></div>
 
                       <div class="col-3"><button onclick="addOperator('/')" class="btn1 num m-1 side text-white w-100">/</button></div>
-
+                    </div>
                     <div class="row g-2 m-1">
 
                       <div class="col-3"><button onclick="click7()" id="seven" class="btn1 num m-1 text-white inc w-100">7</button></div>
@@ -76,3 +80,4 @@
     <script src="file.js"></script>
 </body>
 </html>
+
