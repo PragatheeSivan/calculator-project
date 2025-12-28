@@ -1,83 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
 
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 
 
 
-    
+
+
 </head>
+
 <body class="d-flex justify-content-center align-items-center vh-100">
     <div class="bg-color">
-        <div class="container-fluid">
+        <div class="container p-3">
             <div class="row">
-              
+
                 <div class="col-12 text-center">
-                  <h1 class="text-white">Welcome to Calculator!</h1>
+                    <h1 class="text-white">Welcome to Calculator!</h1>
                 </div>
-                  <div class="row mb-2">
-  <div class="col-12">
-    <input id="display" class="no w-100">
-  </div>
-</div>
-                  <div class="pt-3">
+                <input id="display" class="no">
+                <div class="pt-3">
                     <div class="row g-2">
 
-                      <div class="col-3"><button onclick="allClear()" class="btn1 num m-1 top-color w-100">AC</button></div>
+                        <div class="col-3"><button onclick="allClear()" class="btn1 num m-1 top-color w-100">AC</button></div>
 
-                      <div class="col-3"><button onclick="onedel()" class="btn1 num m-1 top-color w-100"><i class="fa-solid fa-arrow-left"></i></button></div>
+                        <div class="col-3"><button onclick="onedel()" class="btn1 num m-1 top-color w-100">&#129028;</button></div>
 
-                      <div class="col-3"><button onclick="addOperator('%')" class="btn1 num m-1 top-color w-100">%</button></div>
+                        <div class="col-3"><button onclick="addOperator('%')" class="btn1 num m-1 top-color w-100">%</button></div>
 
-                      <div class="col-3"><button onclick="addOperator('/')" class="btn1 num m-1 side text-white w-100">/</button></div>
-                    </div>
-                    <div class="row g-2 m-1">
-
-                      <div class="col-3"><button onclick="click7()" id="seven" class="btn1 num m-1 text-white inc w-100">7</button></div>
-
-                      <div class="col-3"><button onclick="click8()" id="eight" class="btn1 num m-1 text-white inc w-100">8</button></div>
-
-                      <div class="col-3"><button onclick="click9()" id="nine" class="btn1 num m-1 text-white inc w-100">9</button></div>
-
-                      <div class="col-3"><button onclick="addOperator('*')" class="btn1 num m-1 side text-white w-100">x</button></div>
+                        <div class="col-3"><button onclick="addOperator('/')" class="btn1 num m-1 side text-white w-100">/</button></div>
+                        
                     </div>
 
-                    <div class="row g-2 m-1">
+                        <div class="row g-2 m-1">
 
-                      <div class="col-3"><button onclick="click4()" id="four" class="btn1 num m-1 text-white inc w-100">4</button></div>
-                      <div class="col-3"><button onclick="click5()" id="five" class="btn1 num m-1 text-white inc w-100">5</button></div>
-                      <div class="col-3"><button onclick="click6()" id="six" class="btn1 num m-1 text-white inc w-100">6</button></div>
-                      <div class="col-3"><button onclick="addOperator('-')" class="btn1 num m-1 side text-white w-100">-</button></div>
+                            <div class="col-3"><button onclick="click7()" id="seven" class="btn1 num m-1 text-white inc w-100">7</button></div>
+
+                            <div class="col-3"><button onclick="click8()" id="eight" class="btn1 num m-1 text-white inc w-100">8</button></div>
+
+                            <div class="col-3"><button onclick="click9()" id="nine" class="btn1 num m-1 text-white inc w-100">9</button></div>
+
+                            <div class="col-3"><button onclick="addOperator('*')" class="btn1 num m-1 side text-white w-100">x</button></div>
+                        </div>
+
+                        <div class="row g-2 m-1">
+
+                            <div class="col-3"><button onclick="click4()" id="four" class="btn1 num m-1 text-white inc w-100">4</button></div>
+                            <div class="col-3"><button onclick="click5()" id="five" class="btn1 num m-1 text-white inc w-100">5</button></div>
+                            <div class="col-3"><button onclick="click6()" id="six" class="btn1 num m-1 text-white inc w-100">6</button></div>
+                            <div class="col-3"><button onclick="addOperator('-')" class="btn1 num m-1 side text-white w-100">-</button></div>
+                        </div>
+                        <div class="row g-2 m-1">
+
+                            <div class="col-3"><button onclick="click1()" id="one" class="btn1 num m-1 text-white inc w-100">1</button></div>
+                            <div class="col-3"><button onclick="click2()" id="two" class="btn1 num m-1 text-white inc w-100">2</button></div>
+                            <div class="col-3"><button onclick="click3()" id="three" class="btn1 num m-1 text-white inc w-100">3</button></div>
+                            <div class="col-3"><button onclick="addOperator('+')" id="plus" class="btn1 num m-1 side text-white w-100">+</button></div>
+                        </div>
+                        <div class="row g-2 m-1">
+                            <div class="col-3"><button onclick="click0()" id="zero" class="btn1 num m-1 text-white inc w-100">0</button></div>
+                            <div class="col-3"><button onclick="click00()" id="doubleZero" class="btn1 num m-1 text-white inc w-100">00</button></div>
+                            <div class="col-3"><button onclick="clickDot()" id="dot" class="btn1 num m-1 text-white inc w-100">.</button></div>
+                            <div class="col-3"><button onclick="calculate()" class="btn1 num m-1 side text-white w-100">=</button></div>
+
+                        </div>
                     </div>
-                    <div class="row g-2 m-1">
-                                        
-                      <div class="col-3"><button onclick="click1()" id="one" class="btn1 num m-1 text-white inc w-100">1</button></div>
-                      <div class="col-3"><button onclick="click2()" id="two" class="btn1 num m-1 text-white inc w-100">2</button></div>
-                      <div class="col-3"><button onclick="click3()" id="three" class="btn1 num m-1 text-white inc w-100">3</button></div>
-                      <div class="col-3"><button onclick="addOperator('+')" id="plus" class="btn1 num m-1 side text-white w-100">+</button></div>
-                    </div>
-                    <div class="row g-2 m-1">
-                      <div class="col-3"><button onclick="click0()" id="zero" class="btn1 num m-1 text-white inc w-100">0</button></div>
-                      <div class="col-3"><button onclick="click00()" id="doubleZero" class="btn1 num m-1 text-white inc w-100">00</button></div>
-                      <div class="col-3"><button onclick="clickDot()" id="dot" class="btn1 num m-1 text-white inc w-100">.</button></div>
-                      <div class="col-3"><button onclick="calculate()" class="btn1 num m-1 side text-white w-100">=</button></div>
- 
-                    </div>
-                  </div>
-                
+
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="file.js"></script>
+        <script src="file.js"></script>
 </body>
-</html>
 
+</html>
