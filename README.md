@@ -22,4 +22,5 @@ A simple calculator application that performs basic arithmetic operations such a
 This project was built to practice JavaScript logic and basic frontend development.
 
 ## Author
-Your Name
+Pragatheeshwaran.K
+
